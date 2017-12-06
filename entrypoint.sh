@@ -25,6 +25,7 @@ socat tcp-listen:5554,bind=$ip,fork tcp:127.0.0.1:5554 &
 socat tcp-listen:5555,bind=$ip,fork tcp:127.0.0.1:5555 &
 socat tcp-listen:80,bind=$ip,fork tcp:127.0.0.1:80 &
 socat tcp-listen:443,bind=$ip,fork tcp:127.0.0.1:443 &
+socat tcp-listen:8080,bind=$ip,fork tcp:127.0.0.1:8080 &
 
 # Set up and run emulator
 if [[ $ARCH == *"x86"* ]]
